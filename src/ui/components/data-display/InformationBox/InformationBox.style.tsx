@@ -38,4 +38,8 @@ export const BoxIcon = styled("img")`
   grid-area: icon;
   display: flex;
   justify-self: end;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    width: 100px;
+  }
 `;

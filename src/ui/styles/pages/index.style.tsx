@@ -2,7 +2,8 @@ import { experimentalStyled as styled } from "@material-ui/core/styles";
 import { Button, Container, Typography } from "@material-ui/core";
 
 export const DefaultImage = styled("div")`
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 370px;
   background-color: ${({ theme }) => theme.palette.secondary.dark};
 
@@ -23,7 +24,7 @@ export const ImageFont = styled(Typography)`
 
 export const Title = styled("h1")`
   ${({ theme }) => theme.breakpoints.down("md")} {
-    font-size: 72px !important;
+    font-size: 60px !important;
   }
 `;
 
@@ -31,6 +32,7 @@ export const SectionContainer = styled(Container)`
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 100vw;
 
   ${({ theme }) => theme.breakpoints.up("md")} {
     grid-template-columns: repeat(2, 1fr);
@@ -54,6 +56,7 @@ export const SectionContent = styled("div")`
   padding: ${({ theme }) => theme.spacing(3)};
   gap: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(2)};
   align-items: center;
+  max-width: 100vw;
 `;
 
 export const NextModuleBtn = styled(Button)`
@@ -64,6 +67,10 @@ export const NextModuleBtn = styled(Button)`
   font-size: 22px;
   color: ${({ theme }) => theme.palette.secondary.light};
   font-weight: 400;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    font-size: 18px;
+  }
 `;
 
 export const MainContent = styled("main")`

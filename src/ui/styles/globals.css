@@ -2,8 +2,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Catamaran', sans-serif;
-    background-color: #F0F2EF;
+    font-family: "Catamaran", sans-serif;
+    background-color: #f0f2ef;
 }
 
 .title {
@@ -21,4 +21,16 @@ body {
 .text {
     font-size: 22px;
     line-height: 26px;
+}
+
+@media (max-width: 960px) {
+    .text {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 38px;
+    }
 }

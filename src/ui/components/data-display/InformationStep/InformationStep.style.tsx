@@ -9,6 +9,11 @@ export const InformationStepContainer = styled("div")`
   background-color: transparent;
   gap: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(3)};
   align-items: center;
+
+  ${({ theme }) => theme.breakpoints.down("md")} {
+    height: 130px;
+    grid-template-columns: 120px 1fr;
+  }
 `;
 
 export const InformationStepTitle = styled("div")`
@@ -27,4 +32,8 @@ export const InformationStepText = styled("div")`
 export const IconInformationStep = styled('img')`
     grid-area: icon;
     cursor: pointer;
+
+    ${({ theme }) => theme.breakpoints.down("md")} {
+      width: 150px !important;
+    }
 `;

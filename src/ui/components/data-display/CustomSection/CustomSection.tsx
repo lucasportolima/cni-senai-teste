@@ -8,7 +8,7 @@ const CustomSection: React.FC = () => {
   return (
     <ContainerCustomSection>
       <Grid container spacing={3}>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <h2 className="subtitle">3. Aprender a viver com os outros</h2>
           <p className="text">
             (Cooperar com os outros e com o desenvolvimento da comunidade)
@@ -25,19 +25,19 @@ const CustomSection: React.FC = () => {
             por todo o meio onde a criança se encontra e com o qual interage.
           </p>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <DefaultImage />
           <ImageFont>
             Fonte: "Capitão Planeta" Turner Program Services
           </ImageFont>
         </Grid>
-        <Grid item xs={12} sx={{ height: "300px", mt: 5 }}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ height: "300px", mt: 5 }}>
           <DefaultImage />
           <ImageFont>
             Fonte: "Os Incríveis", Pixar Animation Studios e Walt Disney Studios
           </ImageFont>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <p className="text">
             Uma vez que a aprendizagem infantil ocorre, de maneira contínua, nas
             relações que a criança constrói desde que nasce - seja com seus pais
@@ -56,11 +56,11 @@ const CustomSection: React.FC = () => {
             influências.
           </p>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <DefaultImage />
           <ImageFont>Fonte: giphy</ImageFont>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <p className="text">
             A Primeira Infância é, portanto, um período sensível para o
             desenvolvimento de habilidades e funções cognitivas complexas
