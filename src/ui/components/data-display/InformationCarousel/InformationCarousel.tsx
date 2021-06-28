@@ -60,8 +60,8 @@ const InformationCarousel: React.FC<ItemsCarouselInterface> = ({
                 <img
                   src={
                     index <= data.currentStep - 1
-                      ? "/Carrossel_ativo.png"
-                      : "/Carrossel_inativo.png"
+                      ? "/bolinha_ativada.svg"
+                      : "/bolinha_nao_ativada.svg"
                   }
                 />
               );

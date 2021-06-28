@@ -15,8 +15,8 @@ const InformationBox: React.FC<InformationBoxInterface> = ({
       <Box sx={{ mt: 8 }}>
         <BoxIcon src={"/icone_box.png"}></BoxIcon>
         <BoxText>
-          {textsContent.map((text) => {
-            return <p className={"text"}>{text}</p>;
+          {textsContent.map((text, index) => {
+            return <p key={`box-${index}`} className={"text"}>{text}</p>;
           })}
         </BoxText>
       </Box>

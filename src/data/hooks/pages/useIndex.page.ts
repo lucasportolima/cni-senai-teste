@@ -1,23 +1,12 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 
-import { UserShortInterface } from "data/@types/UserInterface";
 import { InformationStepInterface } from "data/@types/InformationStepInterface";
 import { carouselDataInterface } from "data/@types/InformationCarouselInterface";
-import { ValidationService } from "data/services/ValidationService";
 import * as data from "data/services/DataContentService";
 
 export default function useIndex() {
-  const [cep, setCep] = useState(""),
-    cepValido = useMemo(() => {
-      return ValidationService.cep(cep);
-    }, [cep]),
-    [erro, setErro] = useState(""),
-    [buscaFeita, setBuscaFeita] = useState(false),
-    [InformationStepData, setInformationStepData] = useState(data.InformationStepData as InformationStepInterface[]),
-    [carouselData, setCarouselData] = useState(data.carouselData as carouselDataInterface),
-    [carregando, setCarregando] = useState(false),
-    [diaristas, setDiaristas] = useState([] as UserShortInterface[]),
-    [diaristasRestantes, setDiaristasRestantes] = useState(0);
+  const [InformationStepData, setInformationStepData] = useState(data.InformationStepData as InformationStepInterface[]),
+    [carouselData, setCarouselData] = useState(data.carouselData as carouselDataInterface);
 
   const toggleStep = index => {
     let tempSteps = [...InformationStepData]
@@ -57,18 +46,10 @@ export default function useIndex() {
   }
 
   return {
-    cep,
-    setCep,
-    cepValido,
-    erro,
-    diaristas,
-    buscaFeita,
-    carregando,
     toggleStep,
     InformationStepData,
     previousCarouselStep,
     nextCarouselStep,
-    carouselData,
-    diaristasRestantes
+    carouselData
   };
 }

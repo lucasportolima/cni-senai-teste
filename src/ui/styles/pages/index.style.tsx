@@ -1,24 +1,10 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
-import { Paper, Button, Container, Typography } from "@material-ui/core";
-
-export const FormElementsContainer = styled("div")`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: ${({ theme }) => theme.spacing(5)};
-  max-width: 650px;
-  margin: 0 auto ${({ theme }) => theme.spacing(7)};
-`;
-
-export const ProfissionaisPaper = styled(Paper)`
-  padding: ${({ theme }) => theme.spacing(7)};
-  margin: 0 auto ${({ theme }) => theme.spacing(10)};
-`;
+import { Button, Container, Typography } from "@material-ui/core";
 
 export const DefaultImage = styled("div")`
   width: 400px;
   height: 370px;
-  background-color: #707070;
+  background-color: ${({ theme }) => theme.palette.secondary.dark};
 
   ${({ theme }) => theme.breakpoints.down("md")} {
     display: block;
@@ -27,8 +13,7 @@ export const DefaultImage = styled("div")`
 `;
 
 export const ImageFont = styled(Typography)`
-  color: #707070;
-  font-family: "Catamaran", sans-serif;
+  color: ${({ theme }) => theme.palette.secondary.dark};
   font-size: 14px;
 
   ${({ theme }) => theme.breakpoints.down("md")} {
@@ -41,8 +26,6 @@ export const Title = styled("h1")`
     font-size: 72px !important;
   }
 `;
-
-export const Subtitle = styled("h3")``;
 
 export const SectionContainer = styled(Container)`
   background-color: transparent;
@@ -57,11 +40,12 @@ export const SectionContainer = styled(Container)`
   ${({ theme }) => theme.breakpoints.down("md")} {
     margin-left: ${({ theme }) => theme.spacing(-2)};
     margin-right: ${({ theme }) => theme.spacing(-2)};
-
-    > :nth-of-type(odd) {
-      background-color: transparent;
-    }
   }
+`;
+
+export const Graphic = styled("img")`
+  display: block;
+  margin: auto;
 `;
 
 export const SectionContent = styled("div")`
@@ -74,13 +58,12 @@ export const SectionContent = styled("div")`
 
 export const NextModuleBtn = styled(Button)`
   background-color: ${({ theme }) => theme.palette.primary.dark};
-  margin: 40px 0px 80px;
-  padding: 4px 48px;
+  margin: ${({ theme }) => theme.spacing(10) + " 0px " + theme.spacing(20)};
+  padding: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(11)};
   border-radius: 100px;
   font-size: 22px;
-  color: #f0f2ef;
+  color: ${({ theme }) => theme.palette.secondary.light};
   font-weight: 400;
-  font-family: "Catamaran", sans-serif;
 `;
 
 export const MainContent = styled("main")`
@@ -91,7 +74,7 @@ export const MainContent = styled("main")`
   background-repeat: no-repeat;
 
   margin-top: ${({ theme }) => theme.spacing(-6)};
-  padding-top: ${({ theme }) => theme.spacing(16)};
+  padding-top: ${({ theme }) => theme.spacing(20)};
 
   h1,
   .subtitle {

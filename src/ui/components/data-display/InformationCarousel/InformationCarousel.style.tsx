@@ -11,11 +11,14 @@ export const TextStep = styled(Typography)`
   text-align: center;
   min-height: 135px;
   font-size: 20px;
-    line-height: 24px;
-    font-family: 'Catamaran', sans-serif;
+  line-height: 24px;
 `;
 
 export const DotsStep = styled("div")`
   margin: auto;
   width: fit-content;
+
+  img {
+    margin: 0 5px;
+  }
 `;
