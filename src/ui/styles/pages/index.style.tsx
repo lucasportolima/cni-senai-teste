@@ -64,6 +64,11 @@ export const SectionContainer = styled(Container)`
   }
 `;
 
+export const Graphic = styled("img")`
+  display: block;
+  margin: auto;
+`;
+
 export const SectionContent = styled("div")`
   background-color: transparent;
   display: grid;

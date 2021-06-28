@@ -1,27 +1,18 @@
 import {
-  Button,
   Typography,
   Container,
-  CircularProgress,
 } from "@material-ui/core";
-
-import Safe from "ui/components/feedback/Safe/Safe";
-import PageTitle from "ui/components/data-display/PageTitle/PageTitle";
-import UserInformation from "ui/components/data-display/UserInformation/UserInformation";
-import TextFieldMask from "ui/components/inputs/TextFieldMask/TextFieldMask";
 import InformationStep from "ui/components/data-display/InformationStep/InformationStep";
 import CustomSection from "ui/components/data-display/CustomSection/CustomSection";
 import InformationCarousel from "ui/components/data-display/InformationCarousel/InformationCarousel";
 import InformationBox from "ui/components/data-display/InformationBox/InformationBox";
 import {
   MainContent,
-  FormElementsContainer,
   SectionContainer,
   SectionContent,
-  ProfissionaisPaper,
   Title,
   DefaultImage,
-  Subtitle,
+  Graphic,
   ImageFont,
   NextModuleBtn,
 } from "ui/styles/pages/index.style";
@@ -60,7 +51,7 @@ export default function Home() {
         </SectionContent>
         {InformationStepData.map((step, index) => {
           return (
-            <SectionContent>
+            <SectionContent key={`section-${index}`}>
               <InformationStep
                 key={index}
                 visible={step.visible}
@@ -87,7 +78,7 @@ export default function Home() {
             ></InformationCarousel>
           </SectionContent>
         </SectionContainer>
-        <SectionContent>
+        <SectionContent sx={{ mt: 10 }}>
           <InformationBox
             textsContent={[
               "Estas categorizações servem para facilitar e iniciar estudos sobre a aprendizagem e para impulsionar o desejo de explorar o mundo gigantesco do processo de aprendizagem. Na prática, esta categorização é questionável.",
@@ -97,7 +88,7 @@ export default function Home() {
         </SectionContent>
         {carouselData.currentStep === carouselData.items.length && (
           <>
-            <SectionContainer>
+            <SectionContainer sx={{ mt: 10 }}>
               <SectionContent>
                 <h2 className="subtitle">
                   Os 4 pilares fundamentais para a educação
@@ -109,9 +100,11 @@ export default function Home() {
                   deles.
                 </span>
               </SectionContent>
-              <SectionContent>bbb</SectionContent>
+              <SectionContent>
+                <Graphic src={"/grafico.svg"} />
+              </SectionContent>
             </SectionContainer>
-            <SectionContainer>
+            <SectionContainer sx={{ mt: 10 }}>
               <SectionContent>
                 <h2 className="subtitle">1. Aprender a conhecer</h2>
                 <p className="text">(Obter instrumentos de compreensão)</p>
@@ -128,7 +121,7 @@ export default function Home() {
                 <ImageFont>Fonte: giphy</ImageFont>
               </SectionContent>
             </SectionContainer>
-            <SectionContainer>
+            <SectionContainer sx={{ mt: 5 }}>
               <SectionContent>
                 <DefaultImage></DefaultImage>
                 <ImageFont sx={{ mt: { xs: 0, md: -5 } }}>Fonte: giphy</ImageFont>
@@ -146,10 +139,10 @@ export default function Home() {
                 </p>
               </SectionContent>
             </SectionContainer>
-            <SectionContent>
+            <SectionContent sx={{ mt: 5 }}>
               <CustomSection></CustomSection>
             </SectionContent>
-            <SectionContainer>
+            <SectionContainer sx={{ mt: 5 }}>
               <SectionContent>
                 <h2 className="subtitle">4. Aprender a ser</h2>
                 <p className="text">
@@ -173,7 +166,7 @@ export default function Home() {
                 <ImageFont sx={{ mt: { xs: 0, md: -21 } }}>Fonte: giphy</ImageFont>
               </SectionContent>
             </SectionContainer>
-            <SectionContent>
+            <SectionContent sx={{ mt: 10 }}>
               <InformationBox
                 textsContent={[
                   "A aprendizagem é um processo contínuo de desenvolvimento pessoal e coletivo e a educação é o caminho pelo qual a personalidade é orientada à sua maturação.",
