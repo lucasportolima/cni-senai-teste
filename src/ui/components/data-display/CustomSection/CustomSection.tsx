@@ -25,7 +25,7 @@ const CustomSection: React.FC = () => {
             por todo o meio onde a criança se encontra e com o qual interage.
           </p>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <Grid item sx={{ height: { xs: '250px', sm: '250px'  } }} xs={12} sm={12} md={6} lg={6} xl={6}>
           <DefaultImage />
           <ImageFont>
             Fonte: "Capitão Planeta" Turner Program Services
@@ -56,7 +56,7 @@ const CustomSection: React.FC = () => {
             influências.
           </p>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+        <Grid sx={{ height: { xs: '250px', sm: '250px'  } }} item xs={12} sm={12} md={6} lg={6} xl={6}>
           <DefaultImage />
           <ImageFont>Fonte: giphy</ImageFont>
         </Grid>

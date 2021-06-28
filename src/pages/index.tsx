@@ -70,7 +70,7 @@ export default function Home() {
               também vê o papel do professor de uma forma diferente.
             </Typography>
           </SectionContent>
-          <SectionContent>
+          <SectionContent sx={{ mt: { xs: 20, sm: 0, md: 0 } }}>
             <InformationCarousel
               nextAction={nextCarouselStep}
               previousAction={previousCarouselStep}
