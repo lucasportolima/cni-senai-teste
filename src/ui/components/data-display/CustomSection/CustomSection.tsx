@@ -1,18 +1,8 @@
 import React from "react";
-
 import Grid from "@material-ui/core/Grid";
+
 import { DefaultImage, ContainerCustomSection } from "./CustomSection.style";
-import {
-  MainContent,
-  FormElementsContainer,
-  SectionContainer,
-  SectionContent,
-  ProfissionaisPaper,
-  Title,
-  Subtitle,
-  ImageFont,
-  NextModuleBtn,
-} from "ui/styles/pages/index.style";
+import { ImageFont } from "ui/styles/pages/index.style";
 
 const CustomSection: React.FC = () => {
   return (

@@ -16,8 +16,6 @@ import {
   ImageFont,
   NextModuleBtn,
 } from "ui/styles/pages/index.style";
-import * as data from "data/services/DataContentService";
-
 import useIndex from "data/hooks/pages/useIndex.page";
 
 export default function Home() {
@@ -33,10 +31,12 @@ export default function Home() {
     <MainContent>
       <Container color={"transparent"}>
         <SectionContainer>
-          <SectionContent>
-            <Title className="title">{data.mainTitle}</Title>
+          <SectionContent sx={{ p: 0 }}>
+            <Title className="title">
+            Teorias da aprendizagem  
+            </Title>
             <Typography className="text" mt={-3}>
-              {data.mainSubtitle}
+            Aprendizagem é um processo que pode ser entendido à luz de diferentes paradigmas com diferentes perspectivas.
             </Typography>
           </SectionContent>
           <SectionContent>

@@ -1,9 +1,6 @@
 import React from "react";
 
 import {
-  PageTitleContainer,
-  PageTitleStyled,
-  PageSubtitleStyled,
   IconInformationStep,
   InformationStepTitle,
   InformationStepText,

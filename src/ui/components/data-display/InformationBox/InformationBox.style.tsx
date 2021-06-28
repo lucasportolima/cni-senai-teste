@@ -1,9 +1,6 @@
 import { experimentalStyled as styled } from "@material-ui/core/styles";
 import {
-  Button,
-  Typography,
   Container,
-  CircularProgress,
   CardMedia,
 } from "@material-ui/core";
 
@@ -14,12 +11,12 @@ export const Box = styled(Container)`
   display: grid;
   grid-template-columns: 35% 1fr;
   grid-template-rows: repeat(1, auto);
-  grid-template-areas: "avatar text";
+  grid-template-areas: "icon text";
   gap: ${({ theme }) => theme.spacing(0.5) + " " + theme.spacing(5)};
   align-items: center;
 
   ${({ theme }) => theme.breakpoints.down("md")} {
-    background-color: #E8C0D7 !important;
+    background-color: ${({ theme }) => theme.palette.primary.light} !important;
     position: initial !important;
     width: 100% !important;
   }
@@ -38,7 +35,7 @@ export const BoxText = styled("div")`
 `;
 
 export const BoxIcon = styled("img")`
-  grid-area: avatar;
+  grid-area: icon;
   display: flex;
   justify-self: end;
 `;
