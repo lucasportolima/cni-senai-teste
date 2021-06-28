@@ -32,7 +32,53 @@ Público-alvo do curso: professores de Ensino Fundamental e Médio.
 ```
 JUSTIFICATIVAS E CORREÇÕES PROPOSTAS
 
-(escreva neste espaço suas considerações sobre o protótipo, layout e material de apoio)
+Comentários e Propostas de Melhorias:  
+
+
+
+Navbar 
+
+Apontamentos: 
+
+A localização em que os botões da navbar se encontravam ficava muito próximo ao topo da página, o que dificultava a visibilidade e, consequentemente, a usabilidade do usuário, já que por estar muito escondido não demonstrava a real importância dessas aulas, podendo até mesmo ser confundido com as formas de fundo, fazendo com que, provavelmente, a taxa de cliques diminuísse consideravelmente. Ainda mais levando em conta os usuários que iriam acessar a plataforma mobile. 
+
+A escolha das cores dos botões não ficou clara para mim, pela paleta presente na landing page, em tons de rosa claro, rosa escuro, branco e preto, achei que os tons de azul e verde não seguiam a mesma linha das outras tonalidades presentes no site.  
+
+ 
+
+Como eu melhoraria: 
+
+Deixei os botões mais a mostra, apresentando já os textos de forma que, apesar de eles estarem visíveis, não interferiram no peso do título principal. Fazendo com que, os usuários encontrem facilmente esses botões, demonstrando a sequência que eles vão seguir após ler essa aula de Teorias do Aprendizado, e também mantive uma animação aumentando o botão para manter a dinamização da página. 
+
+Se todas as aulas contidas nesses botões da navbar abordarem conteúdos parecidos ao da página "principal" eu manteria os botões na linha do rosa, alterando apenas a profundidade da cor. Mas se as aulas abordarem conteúdos totalmente diferentes da página Teorias do Aprendizado, seguir com cores distintas faz sentido. 
+
+ 
+
+Títulos 
+
+Apontamentos: 
+
+Os títulos estavam hierarquicamente divididos por escalas e cores, mas pelo fato de existirem títulos rosas e pretos, mesmo alguns rosas sendo em escalas maiores, o preto acabava roubando a atenção pelo grande contraste com a cor de fundo. 
+
+ 
+
+Como eu melhoraria: 
+
+Decidi seguir uma padronização de cores, fazendo com que todos os títulos seguissem na cor rosa mais escuro, dando assim uma sensação de unanimidade e fazendo com que a hierarquia ficasse mais clara. 
+
+ 
+
+Gráficos 
+
+Apontamentos: 
+
+O gráfico localizado nos 4 pilares fundamentais para a educação estava um pouco confuso pela ordem da numeração, que não seguia o sentido horário, nem anti-horário, e as cores escolhidas também não auxiliavam a leitura 
+
+ 
+
+Como eu melhoraria: 
+
+Segui a mesma sequência da navbar, utilizando a cor rosa base para o gráfico, alterando as profundidades das cores, e reorganizei a ordem da numeração para seguir tanto a ordem da cor mais clara até a mais escura, quanto o sentido horário para facilitar a leitura. 
 
 ```
 
