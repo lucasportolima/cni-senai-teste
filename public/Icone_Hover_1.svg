@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.183" y1="0.107" x2="0.823" y2="0.859" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d60056"/>
+      <stop offset="0.266" stop-color="#ca0056"/>
+      <stop offset="0.781" stop-color="#c00057"/>
+      <stop offset="1" stop-color="#aa0058"/>
+    </linearGradient>
+    <filter id="Elipse_6" x="0" y="0" width="260" height="260" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 77 77">
+      <image width="77" height="77" xlink:href="data:image/png;base64,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"/>
+    </pattern>
+  </defs>
+  <g id="Grupo_20" data-name="Grupo 20" transform="translate(-274 -836)">
+    <g transform="matrix(1, 0, 0, 1, 274, 836)" filter="url(#Elipse_6)">
+      <circle id="Elipse_6-2" data-name="Elipse 6" cx="100" cy="100" r="100" transform="translate(26 26)" fill="url(#linear-gradient)"/>
+    </g>
+    <rect id="Ícone_-1" data-name="Ícone -1" width="88" height="89" transform="translate(356 918)" fill="url(#pattern)"/>
+  </g>
+</svg>

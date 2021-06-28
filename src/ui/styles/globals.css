@@ -1,0 +1,25 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+    background-color: #F0F2EF;
+}
+
+.title {
+    font-size: 92px;
+    font-weight: bold;
+    line-height: 92px;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.text {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Catamaran', sans-serif;
+}
